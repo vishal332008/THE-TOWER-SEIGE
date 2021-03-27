@@ -26,9 +26,9 @@ class Block{
         }
         else{
           push();
-          this.visibility = this.visibility - 5;
+          this.visibility = this.visibility - 10;
          World.remove(world,this.body);
-         tint(0,255,255,this.visibility);
+         tint(255,this.visibility);
          image(this.image , this.body.position.x , this.body.position.y , 50 , 50);
          pop();
         }
